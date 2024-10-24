@@ -8,14 +8,18 @@ public interface CourseDao {
     /// Add
     String saveCourse(Course course);
 
-    // GetCourseById
-    Course getCourseById(Long id);
-
     // update
     String updateCourse(Long id, Course newcourse);
+
     // delete
     String deleteCourse(Long id);
     // getAll
-//    List<Course> getAllCourses();
+    // List<Course> getAllCourses();
+
+    // find By Id
+    Course findById(Long id);
+
+    // GetCourseById
+    Course getCourseById(Long id);
 
 }

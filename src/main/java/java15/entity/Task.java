@@ -21,7 +21,7 @@ public class Task {
     private LocalDate deadline;
 
     /// lesson
-    @OneToOne
-    private Lesson lesson;
+//    @OneToOne
+//    private Lesson lesson;
 
 }
