@@ -1,39 +1,43 @@
-package java15.dao.impl;
+package java15.service.impl;
 
 import java15.dao.MentorDao;
+import java15.dao.impl.MentorDaoImpl;
 import java15.entity.Lesson;
 import java15.entity.Mentor;
+import java15.service.MentorService;
 
 import java.util.List;
 
-public class MentorDaoImpl implements MentorDao {
+public class MentorServiceImpl implements MentorService {
+    MentorDao mentorDao = new MentorDaoImpl();
+
     @Override
     public String addMentor(Mentor mentor) {
-        return "";
+        return mentorDao.addMentor(mentor);
     }
 
     @Override
     public String updateMentor(Mentor mentor) {
-        return "";
+        return mentorDao.updateMentor(mentor);
     }
 
     @Override
     public String deleteMentor(int id) {
-        return "";
+        return mentorDao.deleteMentor(id);
     }
 
     @Override
     public Mentor getMentorById(int id) {
-        return null;
+        return mentorDao.getMentorById(id);
     }
 
     @Override
     public List<Mentor> getAllMentors() {
-        return List.of();
+        return mentorDao.getAllMentors();
     }
 
     @Override
     public Lesson getAllLessonAndStudentByMentor(String mentorName) {
-        return null;
+        return mentorDao.getAllLessonAndStudentByMentor(mentorName);
     }
 }

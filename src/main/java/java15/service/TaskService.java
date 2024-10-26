@@ -1,11 +1,11 @@
-package java15.dao;
+package java15.service;
 
 import java15.entity.Task;
 
-public interface TaskDao {
+public interface TaskService {
     //  TODO crud
     String saveTaskToLesson(Long taskId,Long lessonId);
-    // Read
+     // Read
     Task getTaskById(Long taskId);
     // Update
     String updateTaskById(Long taskId,Long lessonId);

@@ -1,14 +1,10 @@
 package java15;
 
-import java15.config.DatabaseConnection;
-import java15.entity.Course;
 import java15.entity.Student;
 import java15.service.CourseService;
 import java15.service.StudentService;
-import java15.service.serviceImpl.CourseServiceImpl;
-import java15.service.serviceImpl.StudentServiceImpl;
-
-import java.time.LocalDate;
+import java15.service.impl.CourseServiceImpl;
+import java15.service.impl.StudentServiceImpl;
 
 /**
  * Hello world!

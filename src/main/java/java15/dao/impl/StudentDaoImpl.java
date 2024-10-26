@@ -20,6 +20,26 @@ public class StudentDaoImpl implements StudentDao {
         entityManager.close();
         return "success";
     }
+
+    @Override
+    public Student getStudentById(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<Student> getAllStudents() {
+        return List.of();
+    }
+
+    @Override
+    public String updateStudentById(Long id, Student student) {
+        return "";
+    }
+
+    @Override
+    public String deleteStudentById(Long id) {
+    }
+
     @Override
     public String assignStudentByCourseId(Long studentId, Long courseId) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();

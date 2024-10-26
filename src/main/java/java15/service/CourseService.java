@@ -16,6 +16,11 @@ public interface CourseService {
     // delete
     String deleteCourse(Long id);
     // getAll
-//    List<Course> getAllCourses();
+    List<Course> getAllCourses();
+
+    Long countOfStudentByCourseId(Long id);
+
+    List<Course> sortCourseToPrice(String ascOrDesc);
+
 
 }

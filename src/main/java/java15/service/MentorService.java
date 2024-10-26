@@ -1,11 +1,11 @@
-package java15.dao;
+package java15.service;
 
 import java15.entity.Lesson;
 import java15.entity.Mentor;
 
 import java.util.List;
 
-public interface MentorDao {
+public interface MentorService {
     // todo CRUD
     String addMentor(Mentor mentor);
     String updateMentor(Mentor mentor);

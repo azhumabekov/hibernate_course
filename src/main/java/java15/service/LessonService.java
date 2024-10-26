@@ -1,10 +1,10 @@
-package java15.dao;
+package java15.service;
 
 import java15.entity.Lesson;
 
 import java.util.List;
 
-public interface LessonDao{
+public interface LessonService {
     // todo CRUD
     String addLessonToCourse(Long courseId, Long lessonId);
     String updateLessonToCourse(Long courseId, Long lessonId);
@@ -14,5 +14,6 @@ public interface LessonDao{
 
     String deleteLessonByCourseId(Long courseId,Long lessonId);
     List<Lesson> sortLessonByPublishedDate();
+
 
 }

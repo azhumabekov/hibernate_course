@@ -9,17 +9,21 @@ public interface CourseDao {
     String saveCourse(Course course);
 
     // update
-    String updateCourse(Long id, Course newcourse);
+    String updateCourse(Long id, Course newCourse);
 
     // delete
     String deleteCourse(Long id);
     // getAll
-    // List<Course> getAllCourses();
+    List<Course> getAllCourses();
 
-    // find By Id
+    // find By id
     Course findById(Long id);
 
     // GetCourseById
     Course getCourseById(Long id);
+
+    Long countOfStudentByCourseId(Long courseId);
+
+    List<Course> sortCourseToPrice(String ascOrDesc);
 
 }
